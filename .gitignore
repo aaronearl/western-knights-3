@@ -1,0 +1,7 @@
+.DS_Store
+# Node JS Files
+node_modules/
+# dotenv environment variables files
+.env
+.env.development
+.env.production
