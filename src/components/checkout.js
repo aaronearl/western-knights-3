@@ -20,8 +20,8 @@ const redirectToCheckout = async event => {
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
     items: [{ plan: "plan_Grf1ADYVZdUwWI", quantity: 1 }],
-    successUrl: `http://localhost:8000/success/`,
-    cancelUrl: `http://localhost:8000/`,
+    successUrl: `http://westernknights56.org/success/`,
+    cancelUrl: `http://westernknights56.org/`,
   })
 
   if (error) {

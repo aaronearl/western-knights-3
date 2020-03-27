@@ -58,7 +58,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   autoplaySpeed: 9000,
-  speed: 9000,
+  speed: 7000,
   slidesToShow: 1,
   slidesToScroll: 1,
 }
@@ -70,18 +70,12 @@ class Hero extends React.Component {
       <Container>
         <ImageCarousel>
           <Slider {...settings}>
-            {/* <div>
-              <BgImage {...data[1].node} />
-            </div> */}
             <div>
-              <BgImage {...data[3].node} />
-            </div>
-            <div>
-              <BgImage {...data[2].node} />
-            </div>
-            {/* <div>
               <BgImage {...data[0].node} />
-            </div> */}
+            </div>
+            <div>
+              <BgImage {...data[1].node} />
+            </div>
           </Slider>
         </ImageCarousel>
         <Overlay>{children}</Overlay>
