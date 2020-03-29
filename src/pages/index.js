@@ -97,6 +97,7 @@ const IndexPage = ({ data }) => (
       <SectionTitle>Contact Us</SectionTitle>
       <Flex alignItems="center" flexDirection="column">
         <Box px={2} width={[1, 1 / 2]}>
+          <p>Are you interested in becoming a Mason?  If so, please contact us below.</p>
           <ContactForm />
         </Box>
       </Flex>
