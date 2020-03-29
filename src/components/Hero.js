@@ -82,6 +82,9 @@ class Hero extends React.Component {
             <div>
               <BgImage {...data[3].node} />
             </div>
+            <div>
+              <BgImage {...data[4].node} />
+            </div>
           </Slider>
         </ImageCarousel>
         <Overlay>{children}</Overlay>
