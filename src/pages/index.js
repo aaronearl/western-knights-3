@@ -44,6 +44,16 @@ const SectionTitle = styled.h2`
   `}
 `
 
+const SectionTitle2 = styled.h2`
+  font-size: 2em;
+  color:#FF0000
+  margin: 0.67em 0;
+  ${media.xs`
+    font-size:1.5em;
+  `}
+`
+
+
 const IndexPage = ({ data }) => (
   <Layout>
     <StyledHero fluid={data.hero.edges[0].node.fluid} data={data.hero.edges}>
@@ -67,6 +77,7 @@ const IndexPage = ({ data }) => (
     </Section>
     <Section id="trestle" dark>
       <SectionTitle>Trestle-Board</SectionTitle>
+      <SectionTitle2>THE LODGE IS DARK DUE TO COVID-19 UNITIL FUTHER NOTICE</SectionTitle2>
       <Experience edges={data.allExperienceJson.edges} />
     </Section>
     <Section id="members">
