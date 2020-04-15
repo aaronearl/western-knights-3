@@ -12,6 +12,8 @@ import Experience from '../components/Experience';
 import Checkout from "../components/checkout"
 import Technologies from '../components/Technologies';
 
+
+
 const StyledHero = styled(Hero)`
   margin-top: -62px;
 `
@@ -72,6 +74,13 @@ const IndexPage = ({ data }) => (
            Western Knights, our objective, is to engage and inspire good men, who believe in a Supreme Being, to live according to the Masonic tenets of Friendship, Morality, and Brotherly Love.  The Lodge is committed to spreading the cement of brotherhood and community appreciation; thus, making the world a benevolent place.
           </p>
           <p>Working under the auspices of the Most Worshipful Prince Hall Grand  Lodge of California where Samuel T King is the 56th Grand Master.</p>
+
+          <h2>Frequently asked questions?  Use the links below. </h2>
+          <br/>
+            <h3><li><a href="https://en.wikipedia.org/wiki/Prince_Hall"><span>Who was PRINCE HALL?</span></a></li></h3>
+          <h3><li><a href="https://mwphglcal.org/phmsf.html">Scholarship Information</a></li></h3>
+
+
         </Box>
       </Flex>
     </Section>
