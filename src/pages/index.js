@@ -100,6 +100,7 @@ const IndexPage = ({ data }) => (
     </Section> */}
     <Section id="scholarship" dark>
       <SectionTitle>Scholarship</SectionTitle>
+      <Technologies edges={data.allScholarship.edges} />
       <h2>Prince Hall</h2>
       <h2>Memorial Education Scholarship Fund</h2>
       <h3>501 (3) (C) Non-profit Charitable Corporation</h3>
@@ -158,6 +159,19 @@ export const pageQuery = graphql`
            }
            allLogos: allImageSharp(
              filter: { original: { src: { regex: "/logo/" } } }
+             sort: { fields: original___src }
+           ) {
+             edges {
+               node {
+                 id
+                  fixed(height: 475, grayscale: false) {
+                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                 }
+               }
+             }
+           }
+           allScholarship: allImageSharp(
+             filter: { original: { src: { regex: "/scholarship/" } } }
              sort: { fields: original___src }
            ) {
              edges {
