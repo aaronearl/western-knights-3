@@ -75,10 +75,10 @@ const IndexPage = ({ data }) => (
           </p>
           <p>Working under the auspices of the Most Worshipful Prince Hall Grand  Lodge of California where Samuel T King is the 56th Grand Master.</p>
 
-          <h2>Frequently asked questions?  Use the links below. </h2>
+          {/* <h2>Frequently asked questions?  Use the links below. </h2>
           <br/>
             <h3><li><a href="https://en.wikipedia.org/wiki/Prince_Hall"><span>Who was PRINCE HALL?</span></a></li></h3>
-          <h3><li><a href="https://mwphglcal.org/phmsf.html">Scholarship Information</a></li></h3>
+          <h3><li><a href="https://mwphglcal.org/phmsf.html">Scholarship Information</a></li></h3> */}
 
 
         </Box>
