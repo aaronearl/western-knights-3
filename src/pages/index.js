@@ -97,12 +97,20 @@ const IndexPage = ({ data }) => (
     {/* <Section id="certifications" dark>
       <SectionTitle>My Certifications</SectionTitle>
       <Certifications edges={data.allCertificationsJson.edges} />
-    </Section>
-    <Section id="education">
-      <SectionTitle>My Education</SectionTitle>
-      <Educations edges={data.allEducationJson.edges} />
     </Section> */}
-    <Section id="contactus" dark>
+    <Section id="scholarship" dark>
+      <SectionTitle>Scholarship</SectionTitle>
+      <h2>Prince Hall</h2>
+      <h2>Memorial Education Scholarship Fund</h2>
+      <h3>501 (3) (C) Non-profit Charitable Corporation</h3>
+      <p>The Prince Hall Memorial Education and Scholarship Fund (PHMESF) grew out of a desire by Prince Hall Masons to provide educational assistance to deserving students in California. Prince Hall was the founder of Black Masonry in America in May of 1787 by a Charter from the Grand Lodge Of England. The African Grand Lodge Of North America was formed in Boston in 1791. All Prince Hall Masons across the country derive from those beginnings. The Most Worshipful Prince Hall Grand Lodge of California has donated to many educational funds through the years and continues to doso. We decided to honor the founder of our order by chartering a Non-Profit Charity to dispense the funds. The PHMESF was established 1991 and granted probationary tax-exempt status by the Internal Revenue Service and the CFTB. The fund received permanent status as a 501 (c ) 3 in 1996.</p>
+      <h3>Our Mission</h3>
+      <p>Summed up in a simple statement "Building bridges to a better tomorrow:" The PHMESF is a 501 (c) 3 tax-deductible nonprofit organization that collects and distributes grants and scholarships to deserving low-income Minority students, children of members of the Prince Hall family, and other High School seniors, who have demonstrated a desire to achieve in spite of their economic circumstances.</p>
+      <h1><a href="https://mwphglcal.org/phmsf.html">Apply for the Scholarship </a></h1>
+      <h1><a href="https://mwphglcal.org/donatetophmsf.html">Donate to the Fund</a></h1>
+      {/* <Educations edges={data.allEducationJson.edges} /> */}
+    </Section>
+    <Section id="contactus" >
       <SectionTitle>Contact Us</SectionTitle>
       <Flex alignItems="center" flexDirection="column">
         <Box px={2} width={[1, 1 / 2]}>
