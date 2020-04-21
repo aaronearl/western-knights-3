@@ -73,7 +73,8 @@ const IndexPage = ({ data }) => (
           <p>
            Western Knights, our objective, is to engage and inspire good men, who believe in a Supreme Being, to live according to the Masonic tenets of Friendship, Morality, and Brotherly Love.  The Lodge is committed to spreading the cement of brotherhood and community appreciation; thus, making the world a benevolent place.
           </p>
-          <p>Working under the auspices of the Most Worshipful Prince Hall Grand  Lodge of California where Samuel T King is the 56th Grand Master.</p>
+          <Technologies edges={data.allGrand.edges} />
+          <p>Working under the auspices of the Most Worshipful Prince Hall Grand  Lodge of California where <strong>Samuel T King is the 56th Grand Master.</strong></p>
 
           {/* <h2>Frequently asked questions?  Use the links below. </h2>
           <br/>
@@ -172,6 +173,19 @@ export const pageQuery = graphql`
            }
            allScholarship: allImageSharp(
              filter: { original: { src: { regex: "/scholarship/" } } }
+             sort: { fields: original___src }
+           ) {
+             edges {
+               node {
+                 id
+                  fixed(height: 475, grayscale: false) {
+                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                 }
+               }
+             }
+           }
+           allGrand: allImageSharp(
+             filter: { original: { src: { regex: "/grand/" } } }
              sort: { fields: original___src }
            ) {
              edges {
