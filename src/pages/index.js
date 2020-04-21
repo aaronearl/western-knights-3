@@ -87,6 +87,7 @@ const IndexPage = ({ data }) => (
     </Section>
     <Section id="trestle" dark>
       <SectionTitle>Trestle-Board</SectionTitle>
+      <Technologies edges={data.allTrestle.edges} />
       <SectionTitle2>THE LODGE IS DARK DUE TO COVID-19 UNITIL FUTHER NOTICE</SectionTitle2>
       <Experience edges={data.allExperienceJson.edges} />
     </Section>
@@ -166,6 +167,32 @@ export const pageQuery = graphql`
                node {
                  id
                   fixed(height: 475, grayscale: false) {
+                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                 }
+               }
+             }
+           }
+           allMembers: allImageSharp(
+             filter: { original: { src: { regex: "/members/" } } }
+             sort: { fields: original___src }
+           ) {
+             edges {
+               node {
+                 id
+                  fixed( grayscale: false) {
+                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                 }
+               }
+             }
+           }
+           allTrestle: allImageSharp(
+             filter: { original: { src: { regex: "/trestle/" } } }
+             sort: { fields: original___src }
+           ) {
+             edges {
+               node {
+                 id
+                  fixed( grayscale: false) {
                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
                  }
                }

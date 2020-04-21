@@ -26,11 +26,25 @@ module.exports = {
         path: `${__dirname}/src/images/scholarship`,
       },
     },
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `members`,
+        path: `${__dirname}/src/images/members`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `grand`,
         path: `${__dirname}/src/images/grand`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `trestle`,
+        path: `${__dirname}/src/images/trestle`,
       },
     },
     {
