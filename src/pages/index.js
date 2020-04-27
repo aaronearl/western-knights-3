@@ -11,7 +11,7 @@ import { media } from '../utils/style'
 import Experience from '../components/Experience';
 import Checkout from "../components/checkout"
 import Technologies from '../components/Technologies';
-import Disqus from '../components/Disqus'
+
 
 
 
