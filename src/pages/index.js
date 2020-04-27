@@ -11,6 +11,7 @@ import { media } from '../utils/style'
 import Experience from '../components/Experience';
 import Checkout from "../components/checkout"
 import Technologies from '../components/Technologies';
+import Disqus from '../components/Disqus'
 
 
 
@@ -117,7 +118,7 @@ const IndexPage = ({ data }) => (
       <SectionTitle>Contact Us</SectionTitle>
       <Flex alignItems="center" flexDirection="column">
         <Box px={2} width={[1, 1 / 2]}>
-          <p>Are you interested in becoming a Mason?  If so, please contact us below.</p>
+          <p>Are you interested in becoming a member of Western Knights?  If so, please contact us below.</p>
           <ContactForm />
         </Box>
       </Flex>
