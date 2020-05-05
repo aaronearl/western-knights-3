@@ -5,6 +5,7 @@
 	"dependencies": {
 		"@stripe/stripe-js": "^1.2.0",
 		"babel-plugin-styled-components": "^1.9.2",
+		"disqus-react": "^1.0.8",
 		"gatsby": "^2.0.64",
 		"gatsby-image": "^2.0.15",
 		"gatsby-plugin-manifest": "^2.0.5",
@@ -35,7 +36,9 @@
 		"typeface-raleway": "^0.0.54",
 		"whatwg-fetch": "2.0.4"
 	},
-	"keywords": [ "gatsby" ],
+	"keywords": [
+		"gatsby"
+	],
 	"license": "MIT",
 	"scripts": {
 		"build": "gatsby build",

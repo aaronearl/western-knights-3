@@ -12,9 +12,6 @@ import Experience from '../components/Experience';
 import Checkout from "../components/checkout"
 import Technologies from '../components/Technologies';
 
-
-
-
 const StyledHero = styled(Hero)`
   margin-top: -62px;
 `
@@ -57,6 +54,7 @@ const SectionTitle2 = styled.h2`
 `
 
 
+
 const IndexPage = ({ data }) => (
   <Layout>
     <StyledHero fluid={data.hero.edges[0].node.fluid} data={data.hero.edges}>
@@ -92,7 +90,17 @@ const IndexPage = ({ data }) => (
       <SectionTitle2>THE LODGE IS DARK DUE TO COVID-19 UNITIL FUTHER NOTICE</SectionTitle2>
       <Experience edges={data.allExperienceJson.edges} />
     </Section>
-    <Section id="members">
+    <Section id="announcements">
+      <SectionTitle>Announcements</SectionTitle>
+      <Flex alignItems="center" flexDirection="column">
+        <h2>Congratulations to Past Master John Weller</h2>
+        <Technologies edges={data.allAnnouncements.edges} />
+        <Box px={2} width={[1, 1 / 2]}>
+        <p>"John C. Weller, 39, of Inglewood, has been appointed to serve as a judge in the Los Angeles County Superior Court. He has served as a deputy district attorney at the Los Angeles County District Attorney’s Office since 2007. He served as a deputy district attorney at the Ventura County District Attorney’s Office from 2005 to 2007. He was a law clerk at the Law Offices of Caree Harper in 2005. Weller earned a Juris Doctor degree from Loyola Law School. He fills the vacancy created by the retirement of Judge Gerald S. Rosenberg. Weller is a Democrat.'' </p>
+        </Box>
+        </Flex>
+    </Section>
+    <Section id="members" dark>
       <SectionTitle>Members Section</SectionTitle>
       <Checkout />
       {/* <Technologies edges={data.allLogos.edges} /> */}
@@ -101,7 +109,7 @@ const IndexPage = ({ data }) => (
       <SectionTitle>My Certifications</SectionTitle>
       <Certifications edges={data.allCertificationsJson.edges} />
     </Section> */}
-    <Section id="scholarship" dark>
+    <Section id="scholarship">
       <SectionTitle>Scholarship</SectionTitle>
       <Technologies edges={data.allScholarship.edges} />
       <h2>Prince Hall</h2>
@@ -114,7 +122,7 @@ const IndexPage = ({ data }) => (
       <h1><a href="https://mwphglcal.org/donatetophmsf.html">Donate to the Fund</a></h1>
       {/* <Educations edges={data.allEducationJson.edges} /> */}
     </Section>
-    <Section id="contactus" >
+    <Section id="contactus" dark>
       <SectionTitle>Contact Us</SectionTitle>
       <Flex alignItems="center" flexDirection="column">
         <Box px={2} width={[1, 1 / 2]}>
@@ -194,6 +202,19 @@ export const pageQuery = graphql`
                node {
                  id
                   fixed( grayscale: false) {
+                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                 }
+               }
+             }
+           }
+           allAnnouncements: allImageSharp(
+             filter: { original: { src: { regex: "/announcements/" } } }
+             sort: { fields: original___src }
+           ) {
+             edges {
+               node {
+                 id
+                  fixed(height: 475, grayscale: false) {
                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
                  }
                }
