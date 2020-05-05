@@ -112,6 +112,8 @@ const IndexPage = ({ data }) => (
     <Section id="scholarship">
       <SectionTitle>Scholarship</SectionTitle>
       <Technologies edges={data.allScholarship.edges} />
+      <Flex alignItems="center" flexDirection="column">
+        <Box px={2} width={[1, 1 / 2]}>
       <h2>Prince Hall</h2>
       <h2>Memorial Education Scholarship Fund</h2>
       <h3>501 (3) (C) Non-profit Charitable Corporation</h3>
@@ -121,6 +123,8 @@ const IndexPage = ({ data }) => (
       <h1><a href="https://mwphglcal.org/phmsf.html">Apply for the Scholarship </a></h1>
       <h1><a href="https://mwphglcal.org/donatetophmsf.html">Donate to the Fund</a></h1>
       {/* <Educations edges={data.allEducationJson.edges} /> */}
+      </Box>
+      </Flex>
     </Section>
     <Section id="contactus" dark>
       <SectionTitle>Contact Us</SectionTitle>
