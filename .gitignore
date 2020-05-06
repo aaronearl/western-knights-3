@@ -1,7 +1,13 @@
 .DS_Store
 # Node JS Files
 node_modules/
+.cache/
+public/
+yarn.lock
+yarn-error.log
+package-lock.json
 # dotenv environment variables files
 .env
 .env.development
 .env.production
+

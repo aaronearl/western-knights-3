@@ -1,12 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import { media } from "../utils/style";
 
-const StyledHero = styled(Hero)`
-  margin-top: -62px;
-`;
+import Layout from "../components/Layout";
+import { media } from "../utils/style";
 
 const Section = styled.div`
   text-align: center;
@@ -36,18 +32,13 @@ const SectionTitle = styled.h2`
   `}
 `;
 
-const SuccessPage = ({ data }) => (
+const ErrorPage = () => (
   <Layout>
     <Section>
-      <SectionTitle>Thank You for your payment</SectionTitle>
-      <br></br>
-      <p>
-        <strong>
-          Your will receive an email as your receipt keep this as your payment history.
-        </strong>
-      </p>
+      <SectionTitle>Page not found</SectionTitle>
+      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Section>
   </Layout>
 );
 
-export default SuccessPage;
+export default ErrorPage;
