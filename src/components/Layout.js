@@ -100,7 +100,7 @@ const Layout = ({ children, noMenu }) => (
             <html lang="en" />
             <meta
               name="description"
-              content="I am a serverless and modern application consultant and continously find ways to help my Lodge Western Knights #56 unlock value by switching from old school development methodology to a modern approach!"
+              content="The Objective of Western Knights Masonic Lodge  is to promote a way of life that binds like-minded men in a worldwide brotherhood that transcends all religious, ethnic, cultural, social and educational differences; by teaching the great principle of Brotherly Love, relief and truth."
             />
           </Helmet>
           <Navbar menu={data.allMenuJson.edges} noMenu={noMenu} />
