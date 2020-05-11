@@ -1,6 +1,9 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import Pattern from '../images/pattern.gif'
+import React from "react";
+import styled, { css } from "styled-components";
+
+import { media } from "../utils/style";
+
+import Pattern from "../images/pattern.gif";
 
 const Base = styled.a`
   font-size: 20pt;
@@ -19,36 +22,39 @@ const Base = styled.a`
     text-decoration: none;
     -webkit-transform:rotate(354deg);
   }
-  ${props =>
+  ${(props) =>
     props.dark &&
     css`
       color: #444;
     `}
-  ${props =>
+  ${(props) =>
     props.block &&
     css`
       display: block;
     `}
-  ${props =>
+  ${(props) =>
     props.small &&
     css`
       font-size: 1em;
     `}
-  ${props =>
+  ${(props) =>
     props.big &&
     css`
       font-size: 2em;
     `}
-`
+  ${media.xs`
+    font-size: 14pt;
+  `}
+`;
 
 class Name extends React.Component {
   render() {
     return (
       <Base {...this.props} href="/">
-       Western Knights Lodge #56
+        Western Knights Lodge #56
       </Base>
-    )
+    );
   }
 }
 
-export default Name
+export default Name;

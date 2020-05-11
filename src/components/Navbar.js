@@ -26,17 +26,9 @@ const Base = styled.div`
   }
 `;
 
-const MenuBox = styled(Box)`
-  /* ${media.xs`
-    display: none;
-  `} */
-`;
+const MenuBox = styled(Box)``;
 
-const NameBox = styled(Box)`
-  ${media.xs`
-    text-align:center;
-  `}
-`;
+const NameBox = styled(Box)``;
 
 const MenuItem = styled(ButtonLink)`
   font-family: "Raleway";
@@ -77,8 +69,8 @@ const styles = {
     position: "fixed",
     width: "36px",
     height: "30px",
-    right: "20px",
-    top: "20px",
+    right: "16px",
+    top: "16px",
   },
   bmBurgerBars: {
     background: "#373a47",
