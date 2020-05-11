@@ -1,12 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Flex, Box } from 'grid-styled'
-import scrollToElement from 'scroll-to-element'
-import ButtonLink from './ButtonLink'
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Flex, Box } from "grid-styled";
+import scrollToElement from "scroll-to-element";
+import { slide as Menu } from "react-burger-menu";
 
-import Name from './Name'
+import ButtonLink from "./ButtonLink";
+import Name from "./Name";
 
-import { media } from '../utils/style'
+import { media } from "../utils/style";
 
 const Base = styled.div`
   padding: 0;
@@ -23,22 +24,22 @@ const Base = styled.div`
     list-style: none;
     font-size: 24px;
   }
-`
+`;
 
 const MenuBox = styled(Box)`
-  ${media.xs`
+  /* ${media.xs`
     display: none;
-  `}
-`
+  `} */
+`;
 
 const NameBox = styled(Box)`
   ${media.xs`
     text-align:center;
   `}
-`
+`;
 
 const MenuItem = styled(ButtonLink)`
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -52,38 +53,129 @@ const MenuItem = styled(ButtonLink)`
   cursor: pointer;
   transition: opacity 0.3s ease;
   ${media.sm`
-     margin-right: 15px;
+    font-size: 16px;
+    float: left;
+    margin-right: 15px;
    `}
-`
+`;
 
-const NavBar = props => (
-  <Base>
-    <Flex>
-      <NameBox px={2} width={[1, 1 / 3, 2 / 6]}>
-        <Name />
-      </NameBox>
-      {!props.noMenu ? (
-        <MenuBox px={2} width={[0, 2 / 3, 4 / 6]}>
-          <ul>
-            {props.menu.map(({ node: item }) => (
-              <li key={item.id}>
-                <MenuItem
-                  onClick={() => {
-                    scrollToElement(item.link)
-                  }}
-                  aria-label={item.title}
-                >
-                  {item.title}
-                </MenuItem>
-              </li>
-            ))}
-          </ul>
-        </MenuBox>
-      ) : (
-        <></>
-      )}
-    </Flex>
-  </Base>
-)
+const DesktopMenuWrapper = styled.ul`
+  ${media.sm`
+    display: none;
+  `}
+`;
 
-export default NavBar
+const BurgerMenuWrapper = styled.div`
+  display: none;
+  ${media.sm`
+    display: block;
+  `}
+`;
+
+const styles = {
+  bmBurgerButton: {
+    position: "fixed",
+    width: "36px",
+    height: "30px",
+    right: "20px",
+    top: "20px",
+  },
+  bmBurgerBars: {
+    background: "#373a47",
+  },
+  bmBurgerBarsHover: {
+    background: "#a90000",
+  },
+  bmCrossButton: {
+    height: "24px",
+    width: "24px",
+  },
+  bmCross: {
+    background: "#bdc3c7",
+  },
+  bmMenuWrap: {
+    position: "fixed",
+    height: "100%",
+  },
+  bmMenu: {
+    background: "#373a47",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em",
+    overflow: "hidden",
+  },
+  bmMorphShape: {
+    fill: "#373a47",
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em",
+  },
+  bmItem: {
+    display: "inline-block",
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.3)",
+    left: 0,
+    top: 0,
+    bottom: 0,
+    right: 0,
+  },
+};
+
+const NavBar = (props) => {
+  const [menuOpenState, setMenuOpenState] = useState(false);
+
+  return (
+    <Base>
+      <Flex>
+        <NameBox px={2} width={[1, 1 / 3, 2 / 6]}>
+          <Name />
+        </NameBox>
+        {!props.noMenu ? (
+          <MenuBox px={2} width={[0, 2 / 3, 4 / 6]}>
+            <DesktopMenuWrapper>
+              {props.menu.map(({ node: item }) => (
+                <li key={item.id}>
+                  <MenuItem
+                    onClick={() => {
+                      scrollToElement(item.link);
+                    }}
+                    aria-label={item.title}
+                  >
+                    {item.title}
+                  </MenuItem>
+                </li>
+              ))}
+            </DesktopMenuWrapper>
+
+            <BurgerMenuWrapper>
+              <Menu
+                right
+                styles={styles}
+                isOpen={menuOpenState}
+                onStateChange={(state) => setMenuOpenState(state.menuOpenState)}
+              >
+                {props.menu.map(({ node: item }) => (
+                  <MenuItem
+                    onClick={() => {
+                      setMenuOpenState(false);
+                      scrollToElement(item.link);
+                    }}
+                    aria-label={item.title}
+                    key={item.id}
+                  >
+                    {item.title}
+                  </MenuItem>
+                ))}
+              </Menu>
+            </BurgerMenuWrapper>
+          </MenuBox>
+        ) : (
+          <></>
+        )}
+      </Flex>
+    </Base>
+  );
+};
+
+export default NavBar;
