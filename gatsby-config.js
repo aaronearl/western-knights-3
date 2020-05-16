@@ -12,6 +12,20 @@ module.exports = {
         path: `${__dirname}/data`,
       },
     },
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `participants`,
+        path: `${__dirname}/src/images/participants`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `community`,
+        path: `${__dirname}/src/images/community`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

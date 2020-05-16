@@ -64,6 +64,10 @@ const DisqusWrapper = styled.div`
   `}
 `;
 
+const Break = styled.div`
+  break-after: inherit;
+  `;
+
 const IndexPage = ({ data, location: { pathname } }) => (
   <Layout>
     <StyledHero fluid={data.hero.edges[0].node.fluid} data={data.hero.edges}>
@@ -110,11 +114,19 @@ const IndexPage = ({ data, location: { pathname } }) => (
     <Section id="announcements">
       <SectionTitle>Announcements</SectionTitle>
       <Flex alignItems="center" flexDirection="column">
+        <Technologies edges={data.allCommunity.edges} />
+        <h2>Community Service</h2>
+         <Box px={2} width={[1, 1 / 2]}>
+        <p>Western Knights participated with Most Worshipful Prince Hall Grand Lodge of California partnership with the Grandparents As Second Parents Community of the Golden State Grand Chapter and Councilman Marqueece Harris-Dawson in Community Food Giveaway.  This event was Saturday, May 9, 2020, from 10 am – 2 pm at the Prince Hall Memorial Auditorium. Our goal is to provide 300 – 400 families with a bag of food.  We have the participation of several Lodges, Chapters, and Community members.</p>
+        </Box>
+        <Technologies edges={data.allParticipants.edges} />
+        <Break>_______________________________________________</Break>
+        <hr/>
         <h2>Congratulations to Past Master John Weller</h2>
         <Technologies edges={data.allAnnouncements.edges} />
         <Box px={2} width={[1, 1 / 2]}>
           <p>
-            "John C. Weller, 39, of Inglewood, has been appointed to serve as a judge in the Los
+            "John C. Weller, 39, of Inglewood, as of April 28th, 2020 has been appointed to serve as a judge in the Los
             Angeles County Superior Court. He has served as a deputy district attorney at the Los
             Angeles County District Attorney’s Office since 2007. He served as a deputy district
             attorney at the Ventura County District Attorney’s Office from 2005 to 2007. He was a
@@ -271,6 +283,32 @@ export const pageQuery = graphql`
         node {
           id
           fixed(grayscale: false) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+      }
+    }
+     allParticipants: allImageSharp(
+      filter: { original: { src: { regex: "/participants/" } } }
+      sort: { fields: original___src }
+    ) {
+      edges {
+        node {
+          id
+          fixed(height: 150, grayscale: false) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+      }
+    }
+    allCommunity: allImageSharp(
+      filter: { original: { src: { regex: "/community/" } } }
+      sort: { fields: original___src }
+    ) {
+      edges {
+        node {
+          id
+          fixed(height: 475, grayscale: false) {
             ...GatsbyImageSharpFixed_withWebp_tracedSVG
           }
         }
