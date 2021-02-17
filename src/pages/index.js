@@ -303,12 +303,11 @@ export const pageQuery = graphql`
     }
     allCommunity: allImageSharp(
       filter: { original: { src: { regex: "/community/" } } }
-      sort: { fields: original___src }
     ) {
       edges {
         node {
           id
-          fixed(height: 475, grayscale: false) {
+          fixed(height: 400, grayscale: false) {
             ...GatsbyImageSharpFixed_withWebp_tracedSVG
           }
         }

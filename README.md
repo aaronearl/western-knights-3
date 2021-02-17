@@ -1,5 +1,5 @@
 # Western Knights Lodge #56
-##westernknightlodge56.org
+https://westernknights56.org/
 
 Instructions:
 Gatsby, Stripe Site, Jam Stack (JAM Stack)
