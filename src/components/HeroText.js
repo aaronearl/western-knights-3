@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Typist from 'react-typist'
+// import Typist from 'react-typist'
 
 import { media } from '../utils/style'
 
