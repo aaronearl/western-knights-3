@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
