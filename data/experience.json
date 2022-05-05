@@ -1,6 +1,6 @@
 [
 	{
-		"company": "Intermediate Meeting",
+		"company": "Business Meeting",
 		"title": "Degree Proficencies",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -10,11 +10,11 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "May  21st",
+		"start": "May  5th",
 		"end": "8 pm"
 	},
 	{
-		"company": "Rehearsal",
+		"company": "Intermediate Meeting",
 		"title": "2nd Degree",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -24,11 +24,11 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "May  28th",
+		"start": "May  19th",
 		"end": "7 pm"
 	},
 	{
-		"company": "Stated Meetingl",
+		"company": "Stated Meeting",
 		"title": "2nd Degree",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -38,36 +38,8 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "June 4th",
+		"start": "June 2th",
 		"end": "8 pm"
-	},
-	{
-		"company": "Planning Meeting",
-		"title": "Bus Trip",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "June 11th",
-		"end": "8 pm"
-	},
-	{
-		"company": "Juneteeth Celebration",
-		"title": "Black History",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "June 13th",
-		"end": ""
 	},
 	{
 		"company": "Intermediate Meeting",
@@ -80,12 +52,12 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "June 18th",
+		"start": "June 16th",
 		"end": "7 pm"
 	},
 	{
 		"company": "St. John's Day",
-		"title": "Celebration (Location TBA)",
+		"title": "Celebration (Location Belmont Ave Church)",
 		"bullets": [
 			"Led consulting solutions for clients",
 			"GCP & AWS Infrastructure Architecture Design",
@@ -94,7 +66,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "June 28th",
+		"start": "June 26th",
 		"end": "10 am"
 	},
 	{
@@ -108,11 +80,11 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "July 2nd",
+		"start": "July 7th",
 		"end": "8 pm"
 	},
 	{
-		"company": "Intermediate Meeting",
+		"company": "167th Annual Grand Session",
 		"title": "Palm Springs, CA",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -122,8 +94,8 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "July 16th",
-		"end": "July 19th"
+		"start": "July 14th",
+		"end": "July 17th"
 	},
 	{
 		"company": "Stated Meeting",
@@ -136,11 +108,11 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "August 6th",
+		"start": "August 4th",
 		"end": "8 pm"
 	},
 	{
-		"company": "PlanningMeeting",
+		"company": "Intermediate Meeting",
 		"title": " ",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -150,21 +122,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "August 13th",
-		"end": "7 pm"
-	},
-	{
-		"company": "Rehearsal PlanningMeeting",
-		"title": " ",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "August 27th",
+		"start": "August 18th",
 		"end": "7 pm"
 	},
 	{
@@ -178,7 +136,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "September 3rd",
+		"start": "September 1st",
 		"end": "8 pm"
 	},
 	{
@@ -192,7 +150,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "September 6th",
+		"start": "September 3rd",
 		"end": "10 am"
 	},
 	{
@@ -206,22 +164,8 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "September 17th",
+		"start": "September 15th",
 		"end": "8 pm"
-	},
-	{
-		"company": "Rehearsal",
-		"title": " 3rd Degree",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "September 24th",
-		"end": "7 pm"
 	},
 	{
 		"company": "Stated Meeting",
@@ -234,22 +178,8 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "October  1st",
+		"start": "October  6th",
 		"end": "8 pm"
-	},
-	{
-		"company": "Planning Meeting",
-		"title": "I 5 - I 95 Connection Raising weekend ",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "October  8th",
-		"end": "7 pm"
 	},
 	{
 		"company": "Intermediate Meeting",
@@ -262,7 +192,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "October  15th",
+		"start": "October  20th",
 		"end": "8 pm"
 	},
 	{
@@ -290,53 +220,11 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "November 5th",
+		"start": "November 3rd",
 		"end": "8 pm"
 	},
 	{
-		"company": "Pala Veterans Bus Trip ",
-		"title": "",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "November 11th",
-		"end": "TBA"
-	},
-	{
-		"company": "Planning Meeting",
-		"title": "I 5 - I 95 Connection Raising weekend",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "November 12th",
-		"end": "7 pm"
-	},
-	{
-		"company": "I-5 / I-95 Raising Weekend",
-		"title": "I­95 Hospitality Bonfire at Dockweiler Beach",
-		"bullets": [
-			"Led consulting solutions for clients",
-			"GCP & AWS Infrastructure Architecture Design",
-			"Containerization Infrastructure Design & Deployment",
-			"Full-stack development on LAMP and LEMP stacks along with AngularJS and Node.js",
-			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
-			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
-		],
-		"start": "November 20th",
-		"end": "5 pm"
-	},
-	{
-		"company": "I-5 / I-95 Raising",
+		"company": "Intermediate Meeting & I-5 / I-95 Raising",
 		"title": "Degree Conferral",
 		"bullets": [
 			"Led consulting solutions for clients",
@@ -346,7 +234,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "November 21th",
+		"start": "November 17th",
 		"end": "8 am"
 	},
 	{
@@ -360,7 +248,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "November 27th",
+		"start": "November 23rd",
 		"end": "8 pm"
 	},
 	{
@@ -374,7 +262,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "November 28th",
+		"start": "November 24th",
 		"end": "8 am"
 	},
 	{
@@ -388,7 +276,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "Decemmber 3rd",
+		"start": "Decemmber 1st",
 		"end": "8 pm"
 	},
 	{
@@ -402,7 +290,7 @@
 			"Concept-to-Launch for more than 30 plugins and themes available for sale on 3rd party marketplaces",
 			"Concept-to-Launch and Roadmap development for one of the best-selling plugins on CodeCanyon with Ultimate Social Deux"
 		],
-		"start": "Decemmber 31th",
+		"start": "Decemmber 29th",
 		"end": "7 pm"
 	}
 ]

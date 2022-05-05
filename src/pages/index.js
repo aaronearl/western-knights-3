@@ -83,7 +83,7 @@ const IndexPage = ({ data, location: { pathname } }) => (
             <strong>Worshipful Master</strong>
           </h2>
           <h2>
-            <strong>Robert E. Mines</strong>
+            <strong>Anthony Henderson</strong>
           </h2>
           <br />
           <p>
@@ -95,7 +95,7 @@ const IndexPage = ({ data, location: { pathname } }) => (
           <Technologies edges={data.allGrand.edges} />
           <p>
             Working under the auspices of the Most Worshipful Prince Hall Grand Lodge of California
-            where <strong>Samuel T King is the 56th Grand Master.</strong>
+            where <strong>David San Juan is the 57th Grand Master.</strong>
           </p>
 
           {/* <h2>Frequently asked questions?  Use the links below. </h2>
@@ -108,7 +108,7 @@ const IndexPage = ({ data, location: { pathname } }) => (
     <Section id="trestle" dark>
       <SectionTitle>Trestle-Board</SectionTitle>
       <Technologies edges={data.allTrestle.edges} />
-      <SectionTitle2>THE LODGE IS DARK DUE TO COVID-19 UNITIL FUTHER NOTICE</SectionTitle2>
+      <SectionTitle2>THE LODGE IS NOW OPEN FOR MEETINGS; HOWEVER, STRICT PRECAUTION IS TO PREVENT THE SPREAD OF THE COVID VIRUS.  THUS, GOVERN YOURSELF ACCORDINGLY AND WELCOME BACK TO IN-PERSON LODGE MEETINGS.</SectionTitle2>
       <Experience edges={data.allExperienceJson.edges} />
     </Section>
     <Section id="announcements">
@@ -116,12 +116,12 @@ const IndexPage = ({ data, location: { pathname } }) => (
       <Flex alignItems="center" flexDirection="column">
         <Technologies edges={data.allCommunity.edges} />
         <h2>Community Service</h2>
-         <Box px={2} width={[1, 1 / 2]}>
-        <p>Western Knights participated with Most Worshipful Prince Hall Grand Lodge of California partnership with the Grandparents As Second Parents Community of the Golden State Grand Chapter and Councilman Marqueece Harris-Dawson in Community Food Giveaway.  This event was Saturday, May 9, 2020, from 10 am – 2 pm at the Prince Hall Memorial Auditorium. Our goal is to provide 300 – 400 families with a bag of food.  We have the participation of several Lodges, Chapters, and Community members.</p>
+        <Box px={2} width={[1, 1 / 2]}>
+          <p>Western Knights participated with Most Worshipful Prince Hall Grand Lodge of California partnership with the Grandparents As Second Parents Community of the Golden State Grand Chapter and Councilman Marqueece Harris-Dawson in Community Food Giveaway.  This event was Saturday, May 9, 2020, from 10 am – 2 pm at the Prince Hall Memorial Auditorium. Our goal is to provide 300 – 400 families with a bag of food.  We have the participation of several Lodges, Chapters, and Community members.</p>
         </Box>
         <Technologies edges={data.allParticipants.edges} />
         <Break>_______________________________________________</Break>
-        <hr/>
+        <hr />
         <h2>Congratulations to Past Master John Weller</h2>
         <Technologies edges={data.allAnnouncements.edges} />
         <Box px={2} width={[1, 1 / 2]}>
